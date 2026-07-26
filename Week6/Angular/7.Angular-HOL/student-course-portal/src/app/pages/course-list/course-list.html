@@ -1,0 +1,23 @@
+<h2>Course List</h2>
+
+<input
+  type="text"
+  [(ngModel)]="searchTerm"
+  placeholder="Search course">
+
+<button (click)="search()">
+  Search
+</button>
+
+<hr>
+
+<div
+  *ngFor="let course of courses"
+  (click)="viewCourse(course)"
+  style="border:1px solid #ccc;padding:10px;margin:10px;cursor:pointer;">
+
+  <h3>{{ course.name }}</h3>
+  <p>{{ course.code }}</p>
+  <p>{{ course.credits }} Credits</p>
+
+</div>

@@ -1,0 +1,40 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Angular",
+      "code": "ANG101",
+      "credits": 4,
+      "gradeStatus": "passed"
+    },
+    {
+      "id": 2,
+      "name": "Java",
+      "code": "JAVA101",
+      "credits": 3,
+      "gradeStatus": "passed"
+    },
+    {
+      "id": 3,
+      "name": "Spring Boot",
+      "code": "SPR101",
+      "credits": 4,
+      "gradeStatus": "pending"
+    }
+  ],
+
+  "students": [
+    {
+      "id": 1,
+      "name": "Rahul",
+      "courseId": 1
+    },
+    {
+      "id": 2,
+      "name": "Aman",
+      "courseId": 2
+    }
+  ],
+
+  "enrollments": []
+}
