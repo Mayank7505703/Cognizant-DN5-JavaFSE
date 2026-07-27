@@ -1,0 +1,27 @@
+<h2>Course List</h2>
+
+<div *ngIf="isLoading">
+  Loading...
+</div>
+
+<div *ngIf="errorMessage">
+  {{errorMessage}}
+</div>
+
+<div
+  *ngFor="let c of courses"
+  style="border:1px solid gray;margin:10px;padding:10px;border-radius:8px;">
+
+  <h3>{{c.name}}</h3>
+
+  <p>Code : {{c.code}}</p>
+
+  <p>Credits : {{c.credits}}</p>
+
+  <p>Status : {{c.gradeStatus}}</p>
+
+  <button [routerLink]="['/courses',c.id]">
+    View Details
+  </button>
+
+</div>
